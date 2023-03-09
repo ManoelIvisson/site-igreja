@@ -6,22 +6,51 @@
     --cor03: #EB9232;
     --cor04: #d46422;
     --cor05: #f65627;
+    --branca: white;
 }
 
 * {
     margin: 0px;
+    font-family: sans-serif;
 }
 
 header {
-    background-color: black;
+    background-image: linear-gradient(to right, black, var(--cor05));
 }
 
 nav {
     display: inline;
 }
 
+nav > a {
+    color: var(--branca);
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 1.2em;
+}
+
+nav > a:hover {
+    transition: 0.5s;
+    color: var(--cor03);
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+}
+
 #texto-biblico {
-    background-color: rgba(0, 0, 0, 0.714);
+    background-color: rgba(0, 0, 0, 0.850);
+    color: var(--branca);
+    max-height: 800px;
+    min-height: 200px;
+}
+
+#texto-biblico p {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    padding: 50px 5px;
+}
+
+#texto-biblico strong {
     color: var(--cor03);
 }
 
@@ -29,5 +58,9 @@ main {
     max-width: 1000px;
     min-width: 400px;
     margin: auto;
-    background-color: white;
+    background-color: var(--branca);
+}
+
+main p {
+    text-align: justify;
 }
