@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #f6c027;
+    --cor02: #d49322;
+    --cor03: #EB9232;
+    --cor04: #d46422;
+    --cor05: #f65627;
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: inline;
+}
+
+#texto-biblico {
+    background-color: rgba(0, 0, 0, 0.714);
+    color: var(--cor03);
+}
+
+main {
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    background-color: white;
+}
