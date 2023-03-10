@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
     --cor01: #f6c027;
     --cor02: #d49322;
@@ -7,15 +9,19 @@
     --cor04: #d46422;
     --cor05: #f65627;
     --branca: white;
+
+    --fonte-padrao: 'Poppins', sans-serif;
+    --fonte-negrito: 700;
 }
 
 * {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 header {
     background-image: linear-gradient(to right, black, var(--cor05));
+    padding: 5px;
 }
 
 nav {
@@ -27,6 +33,7 @@ nav > a {
     text-decoration: none;
     padding: 0px 10px;
     font-size: 1.2em;
+    font-family: var(--fonte-padrao);
 }
 
 nav > a:hover {
@@ -48,19 +55,38 @@ nav > a:hover {
     margin: auto;
     font-size: 2em;
     padding: 50px 5px;
+    font-family: var(--fonte-padrao);
 }
 
 #texto-biblico strong {
     color: var(--cor03);
+    font-style: italic;
 }
 
 main {
     max-width: 1000px;
-    min-width: 400px;
+    min-width: 300px;
     margin: auto;
     background-color: var(--branca);
 }
 
 main p {
     text-align: justify;
+}
+
+footer {
+    background-image: linear-gradient(to left, black, var(--cor05));
+    color: var(--branca);
+}
+
+.rodape {
+    display: inline-block;
+    max-width: 500px;
+    min-width: 150px;
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+.rodape a {
+    color: var(--branca);
 }
