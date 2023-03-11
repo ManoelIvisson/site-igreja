@@ -25,7 +25,7 @@ header {
 }
 
 nav {
-    display: inline;
+    display: inline-block;
 }
 
 nav > a {
